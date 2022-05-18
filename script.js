@@ -1,4 +1,4 @@
-const container = document.getElementsByClassName (".team-container");
+const container = document.getElementsByClassName(".team-container");
 
 
 const profili = [
@@ -41,22 +41,6 @@ const profili = [
 console.log(profili); 
 
 
-// creo la team-card
-let  teamCardEl = document.createElement ("div");
-    teamCardEl.classList.add ("team-card");
-
-// creo la team-card-img e il tag img
-let CardImgEl = document.createElement ("div");
-    CardImgEl.classList.add ("card-image");
-
-let imgEl =document.createElement ("img");
-
-// creo card-text e i correlati tag
-let textmCardEl = document.createElement ("div");
-    textmCardEl.classList.add ("card-text");
-
-let textNome = document.createElement ("h3");
-let textRuolo = document.createElement ("p");
 
 
     
@@ -67,5 +51,51 @@ let textRuolo = document.createElement ("p");
 for(let i = 0; i < profili.length; i++ ){
     let profiloiesimo = profili [i];
 
+    // creo la team-card
+let  teamCardEl = document.createElement ("div");
+teamCardEl.classList.add ("team-card");
+
+// creo la team-card-img e il tag img
+let CardImgEl = document.createElement ("div");
+CardImgEl.classList.add ("card-image");
+
+let imgEl =document.createElement ("img");
+
+// creo card-text e i correlati tag
+let textCardEl = document.createElement ("div");
+textCardEl.classList.add ("card-text");
+
+let textNome = document.createElement ("h3");
+let textRuolo = document.createElement ("p");
+
+
+
+    imgEl.src = profiloiesimo.foto;
+    textNome.append(profiloiesimo.nome);
+    textRuolo.append (profiloiesimo.ruolo);
+
+    // console.log(profiloiesimo.foto);
+    // console.log(profiloiesimo.nome);
+    // console.log(profiloiesimo.ruolo);
+
+    
+
+
+    
+    // sezione img
+    teamCardEl.append(CardImgEl);
+    CardImgEl.append(imgEl);
+
+    // sezione text
+    textCardEl.append (textNome);
+    textCardEl.append (textRuolo);
+    teamCardEl.append(textCardEl);
+
+
+
+
+
+
+    container.append(teamCardEl);
 
 }
