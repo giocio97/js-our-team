@@ -43,9 +43,23 @@ console.log(profili);
 
 // creo la team-card
 let  teamCardEl = document.createElement ("div");
-teamCardEl.classList.add ("team-card");
+    teamCardEl.classList.add ("team-card");
 
-// creo la team-card-img
+// creo la team-card-img e il tag img
+let CardImgEl = document.createElement ("div");
+    CardImgEl.classList.add ("card-image");
+
+let imgEl =document.createElement ("img");
+
+// creo card-text e i correlati tag
+let textmCardEl = document.createElement ("div");
+    textmCardEl.classList.add ("card-text");
+
+let textNome = document.createElement ("h3");
+let textRuolo = document.createElement ("p");
+
+
+    
 
 
 
