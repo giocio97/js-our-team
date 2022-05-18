@@ -1,4 +1,4 @@
-const container = document.getElementsByClassName(".team-container");
+const contenitore = document.querySelector(".team-container");
 
 
 const profili = [
@@ -96,6 +96,6 @@ let textRuolo = document.createElement ("p");
 
 
 
-    container.append(teamCardEl);
+    contenitore.append(teamCardEl);
 
 }
