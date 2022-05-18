@@ -1,8 +1,11 @@
+const container = document.getElementsByClassName (".team-container");
+
+
 const profili = [
     {
         "nome" : "Wayne Barnett",
         "ruolo" : "Founder & CEO",
-        "foto" : "./img/wayne-barnett-founder-ceo.jpg",
+        "foto" : " ./img/wayne-barnett-founder-ceo.jpg",
     },
 
     {
@@ -35,4 +38,20 @@ const profili = [
     },
 ];
 
-console.log(profili);
+console.log(profili); 
+
+
+// creo la team-card
+let  teamCardEl = document.createElement ("div");
+teamCardEl.classList.add ("team-card");
+
+// creo la team-card-img
+
+
+
+// creo un ciclo per ogni posizione
+for(let i = 0; i < profili.length; i++ ){
+    let profiloiesimo = profili [i];
+
+
+}
